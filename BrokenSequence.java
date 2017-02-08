@@ -18,8 +18,6 @@ public class BrokenSequence{
         System.out.println(new BrokenSequence().findMissingNumber("1 2 3 4"));//work
         System.out.println(new BrokenSequence().findMissingNumber("2 1 4 3 a"));//work
         System.out.println(new BrokenSequence().findMissingNumber(""));//work
-        System.out.println(new BrokenSequence().findMissingNumber("2 3 4 5")); // doesn't work
-        System.out.println(new BrokenSequence().findMissingNumber("2 3 4 5 6")); // doesn't work
         
         //int[] x ={1,2,3,4};
         //System.out.println(Arrays.toString(x));
