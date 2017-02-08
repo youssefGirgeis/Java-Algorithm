@@ -40,3 +40,36 @@ public class OnesAndZeros{
 		return result;
 	}
 } 
+
+
+/*
+	--Clever Solution -1--
+
+    public static int ConvertBinaryArrayToInt(List<Integer> binary) {
+        
+        int number = 0;
+        for (int bit : binary)
+            number = number << 1 | bit;
+        return number;
+    }
+
+    --Clever Solution -2--
+
+    public static int ConvertBinaryArrayToInt(List<Integer> binary) {
+    
+    String res = "";
+    
+    for (int i : binary)
+            res += i; 
+        
+    return Integer.parseInt(res, 2);
+    }
+	
+
+	--Clever Solution -3--
+
+     public static int ConvertBinaryArrayToInt(List<Integer> binary) {
+        return binary.stream().reduce((x, y) -> x * 2 + y).get();
+    }
+
+*/
