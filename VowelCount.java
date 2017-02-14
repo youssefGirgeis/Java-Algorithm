@@ -14,7 +14,9 @@ public class VowelCount{
     
     public static int getCount(String str){
 
-    	int vowelsCount = 0;
+    	//First Solution
+
+    	/*int vowelsCount = 0;
 
     	char[] vowels = {'a', 'e', 'i', 'o', 'u'};
 
@@ -27,6 +29,21 @@ public class VowelCount{
     	}
 
     	return vowelsCount;
-    }
+    }*/
+
+     /////////////////////////////////////////////
+
+
+    //Second Solution
+
+    	int vowelsCount = 0;
+
+    	for(char c : str.toCharArray()){
+    		vowelsCount += (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') ? 1 : 0;
+    	}
+
+    	return vowelsCount;
+	}
     
 }
+
